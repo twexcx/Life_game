@@ -1,0 +1,206 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Life_game</name>
+    </assembly>
+    <members>
+        <member name="T:Life_game.Game">
+            <summary>
+            The main class in which the game will take place.
+            </summary>
+        </member>
+        <member name="F:Life_game.Game.villagers">
+            <summary>
+            The array in which the Vilagers are located including their position.
+            </summary>
+        </member>
+        <member name="F:Life_game.Game.consistences">
+            <summary>
+            An array that includes the properties of the Villagers (1-death, 2-add, 3-remain in the same state).
+            </summary>
+        </member>
+        <member name="F:Life_game.Game.players">
+            <summary>
+            A variable responsible for the number of Villagers.
+            </summary>
+        </member>
+        <member name="F:Life_game.Game.random">
+            <summary>
+            Singleton with random.
+            </summary>
+        </member>
+        <member name="M:Life_game.Game.startGame">
+            <summary>
+            The method in which the game starts.
+            </summary>
+        </member>
+        <member name="M:Life_game.Game.neighbourCount(System.Int32,System.Int32)">
+            <summary>
+            A method that calculates the number of neighbours (villagers) around a villager relative to position of him.
+            </summary>
+            <param name="posX">Villager position relative to X.</param>
+            <param name="posY">Villager position relative to Y.</param>
+            <returns>the number of neighbours relative to position of villager</returns>
+        </member>
+        <member name="M:Life_game.Game.move">
+            <summary>
+            Basic game method.
+            </summary>
+        </member>
+        <member name="M:Life_game.Game.createPlayers(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Method for creating villagers.
+            </summary>
+            <param name="startPosX">Villager's starting position relative to X.</param>
+            <param name="startPosY">Villager's starting position relative to Y.</param>
+            <param name="ShiftPosX">Shift of the position of the villager relative to X.</param>
+            <param name="ShiftPosY">Shift of the position of the villager relative to Y.</param>
+            <param name="groups">Number of groups of 3 Villager each.</param>
+        </member>
+        <member name="M:Life_game.Game.checkTopLeftAngle(System.Int32,System.Int32)">
+            <summary>
+            Checking the top left corner for neighbors.
+            </summary>
+            <param name="posX">Villager position relative to X.</param>
+            <param name="posY">Villager position relative to Y.</param>
+            <returns>number of neighbours</returns>
+        </member>
+        <member name="M:Life_game.Game.checkBottomLeftAngle(System.Int32,System.Int32)">
+            <summary>
+            Checking the bottom left corner for neighbors.
+            </summary>
+            <param name="posX">Villager position relative to X.</param>
+            <param name="posY">Villager position relative to Y.</param>
+            <returns>Number of neighbours.</returns>
+        </member>
+        <member name="M:Life_game.Game.checkTopRightAngle(System.Int32,System.Int32)">
+            <summary>
+            Checking the top right corner for neighbors.
+            </summary>
+            <param name="posX">Villager position relative to X.</param>
+            <param name="posY">Villager position relative to Y.</param>
+            <returns>Number of neighbours.</returns>
+        </member>
+        <member name="M:Life_game.Game.checkBottomRightAngle(System.Int32,System.Int32)">
+            <summary>
+            Checking the bottom right corner for neighbors.
+            </summary>
+            <param name="posX">Villager position relative to X.</param>
+            <param name="posY">Villager position relative to Y.</param>
+            <returns>Number of neighbours.</returns>
+        </member>
+        <member name="M:Life_game.Game.checkUpperSide(System.Int32,System.Int32)">
+            <summary>
+            Checking upper side for neighbors.
+            </summary>
+            <param name="posX">Villager position relative to X.</param>
+            <param name="posY">Villager position relative to Y.</param>
+            <returns>Number of neighbours.</returns>
+        </member>
+        <member name="M:Life_game.Game.checkLeftSide(System.Int32,System.Int32)">
+            <summary>
+            Checking left side for neighbors.
+            </summary>
+            <param name="posX">Villager position relative to X.</param>
+            <param name="posY">Villager position relative to Y.</param>
+            <returns>Number of neighbours.</returns>
+        </member>
+        <member name="M:Life_game.Game.checkBottomSide(System.Int32,System.Int32)">
+            <summary>
+            Checking bottom side for neighbors.
+            </summary>
+            <param name="posX">Villager position relative to X.</param>
+            <param name="posY">Villager position relative to Y.</param>
+            <returns>Number of neighbours.</returns>
+        </member>
+        <member name="M:Life_game.Game.checkRightSide(System.Int32,System.Int32)">
+            <summary>
+            Checking right side for neighbors.
+            </summary>
+            <param name="posX">Villager position relative to X.</param>
+            <param name="posY">Villager position relative to Y.</param>
+            <returns>Number of neighbours.</returns>
+        </member>
+        <member name="M:Life_game.Game.checkPole(System.Int32,System.Int32)">
+            <summary>
+            Checking for a place that is not at the edge of the pole.
+            </summary>
+            <param name="posX">Villager position relative to X.</param>
+            <param name="posY">Villager position relative to Y.</param>
+            <returns>Number of neighbours.</returns>
+        </member>
+        <member name="T:Life_game.SingleRandom">
+            <summary>
+            Class which includes singleton with random.
+            </summary>
+        </member>
+        <member name="F:Life_game.SingleRandom.random">
+            <summary>
+            A variable of singleton.
+            </summary>
+        </member>
+        <member name="P:Life_game.SingleRandom.randomGenerator">
+            <summary>
+            A variable responsible for randomising numbers.
+            </summary>
+        </member>
+        <member name="M:Life_game.SingleRandom.getInstance">
+            <summary>
+            Method which creates a random instance.
+            </summary>
+            <returns>Object with random.</returns>
+        </member>
+        <member name="M:Life_game.SingleRandom.GetInt(System.Int32,System.Int32)">
+            <summary>
+            Number randomizer between x and y.
+            </summary>
+            <param name="x">A number.</param>
+            <param name="y">A number different to x.</param>
+            <returns>Random number between x and y.</returns>
+        </member>
+        <member name="M:Life_game.SingleRandom.GetInt(System.Int32)">
+            <summary>
+            Number randomizer within x.
+            </summary>
+            <param name="x">A number.</param>
+            <returns>Random number within x.</returns>
+        </member>
+        <member name="M:Life_game.SingleRandom.GetInt">
+            <summary>
+            Number randomizer.
+            </summary>
+            <returns>A random number.</returns>
+        </member>
+        <member name="M:Life_game.SingleRandom.GetDouble">
+            <summary>
+            Decimals randomizer.
+            </summary>
+            <returns>A random decimal.j</returns>
+        </member>
+        <member name="T:Life_game.Villager">
+            <summary>
+            A class which contains information about Villager.
+            </summary>
+        </member>
+        <member name="P:Life_game.Villager.neighbours">
+            <summary>
+            variable responsible for the number of neighbors.
+            </summary>
+        </member>
+        <member name="P:Life_game.Villager.positionX">
+            <summary>
+            Variable responsible for the position of the villager relative to X.
+            </summary>
+        </member>
+        <member name="P:Life_game.Villager.positionY">
+            <summary>
+            Variable responsible for the position of the villager relative to Y.
+            </summary>
+        </member>
+        <member name="P:Life_game.Villager.alive">
+            <summary>
+            A variable responsible for whether the villager is alive or not.
+            </summary>
+        </member>
+    </members>
+</doc>

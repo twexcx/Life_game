@@ -1,0 +1,16 @@
+/Users/Twexcx/Desktop/Life_game/Life_game/bin/Debug/net6.0/Life_game
+/Users/Twexcx/Desktop/Life_game/Life_game/bin/Debug/net6.0/Life_game.xml
+/Users/Twexcx/Desktop/Life_game/Life_game/bin/Debug/net6.0/Life_game.deps.json
+/Users/Twexcx/Desktop/Life_game/Life_game/bin/Debug/net6.0/Life_game.runtimeconfig.json
+/Users/Twexcx/Desktop/Life_game/Life_game/bin/Debug/net6.0/Life_game.dll
+/Users/Twexcx/Desktop/Life_game/Life_game/bin/Debug/net6.0/Life_game.pdb
+/Users/Twexcx/Desktop/Life_game/Life_game/obj/Debug/net6.0/Life_game.csproj.AssemblyReference.cache
+/Users/Twexcx/Desktop/Life_game/Life_game/obj/Debug/net6.0/Life_game.GeneratedMSBuildEditorConfig.editorconfig
+/Users/Twexcx/Desktop/Life_game/Life_game/obj/Debug/net6.0/Life_game.AssemblyInfoInputs.cache
+/Users/Twexcx/Desktop/Life_game/Life_game/obj/Debug/net6.0/Life_game.AssemblyInfo.cs
+/Users/Twexcx/Desktop/Life_game/Life_game/obj/Debug/net6.0/Life_game.csproj.CoreCompileInputs.cache
+/Users/Twexcx/Desktop/Life_game/Life_game/obj/Debug/net6.0/Life_game.dll
+/Users/Twexcx/Desktop/Life_game/Life_game/obj/Debug/net6.0/refint/Life_game.dll
+/Users/Twexcx/Desktop/Life_game/Life_game/obj/Debug/net6.0/Life_game.pdb
+/Users/Twexcx/Desktop/Life_game/Life_game/obj/Debug/net6.0/Life_game.genruntimeconfig.cache
+/Users/Twexcx/Desktop/Life_game/Life_game/obj/Debug/net6.0/ref/Life_game.dll
